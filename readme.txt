@@ -22,12 +22,12 @@
 		<property name="receiveTimeout" value="10000" />
 	</bean>
 
-	<bean id="springJmsProducer" class="com.javacodegeeks.spring.jms.SpringJmsProducer">
+	<bean id="springJmsProducer" class="com.york.spring.jms.SpringJmsProducer">
 		<property name="destination" ref="messageDestination" />
 		<property name="jmsTemplate" ref="jmsTemplate" />
 	</bean>
 
-	<bean id="springJmsConsumer" class="com.javacodegeeks.spring.jms.SpringJmsConsumer">
+	<bean id="springJmsConsumer" class="com.york.spring.jms.SpringJmsConsumer">
 		<property name="destination" ref="messageDestination" />
 		<property name="jmsTemplate" ref="jmsTemplate" />
 	</bean>
@@ -58,11 +58,11 @@
 		<property name="defaultDestination" ref="messageDestination" />
 	</bean>
 
-	<bean id="springJmsProducer" class="com.javacodegeeks.spring.jms.SpringJmsProducer">
+	<bean id="springJmsProducer" class="com.york.spring.jms.SpringJmsProducer">
 		<property name="jmsTemplate" ref="jmsTemplate" />
 	</bean>
 	
-	<bean id="springJmsConsumer" class="com.javacodegeeks.spring.jms.SpringJmsConsumer">
+	<bean id="springJmsConsumer" class="com.york.spring.jms.SpringJmsConsumer">
 		<property name="jmsTemplate" ref="jmsTemplate" />
 	</bean>	
 
@@ -98,14 +98,8 @@ public class PersonMessageConverter implements MessageConverter{
 	}
 
 }
-<bean id="personMessageConverter" class="com.javacodegeeks.spring.jms.PersonMessageConverter" />
+<bean id="personMessageConverter" class="com.york.spring.jms.PersonMessageConverter" />
 
 
 5.2. SpringJmsMessageConverterExample.java
-
- 
-   
-   
-   
-   
 
